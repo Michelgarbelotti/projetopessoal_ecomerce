@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {  
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.conteudo-comprar {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;   
+}
+
+#img-destaque {
+    width: 639px;
+    height: 639px;
+}
+
+.img-galeria {
+    display:flex;
+    gap: 25px;
+    margin: 25px 25% auto;
+}
+
+.img-pequena-galeria { 
+    width: 127px;
+    height: 113px;
+    cursor: pointer;
+    
+}
+
+.img-pequena-galeria:hover, .img-pequena-galeria:focus, .img-pequena-galeria:active  { 
+    border: 2px solid #4CA871;
+}
+    
+
+.conteudo-comprar-info {
+    width: 474px;
+    margin-bottom: 38px;
+}
+
+.conteudo-comprar-info h1 {
+    font: normal normal 900 26px Raleway;
+    color: #333333;
+    text-align: justify;
+    text-transform: capitalize;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 30px;
+}
+
+.conteudo-comprar-info h3 {
+    font: normal normal bold 16px Roboto;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 32px 0 20px; 
+    
+}
+
+.btn-quantidade {
+  width: 100px;
+  height: 50px;
+  
+  border: #DDDDDD 1px solid;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+
+  font: normal normal normal 18px Roboto;
+  color: #999999;
+  cursor: pointer;
+}
+
+.btn-quantidade-selecionado {
+    background: transparent linear-gradient(90deg, #89C993 0%, #80D6B5 100%) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.valor-produto {
+    width: 462px;
+    height: 196px;
+    background-color: #FFFFFF;
+    margin: 32px 0;
+    border-radius: 5px;       
+}
+
+.primeira-condicao {
+    display: flex; 
+}
+
+.preco-descontado {
+    font: normal normal bold 28px Roboto;
+    color: #333333;
+    margin: 18px 18px;    
+}
+
+.desconto {
+    font: normal normal bold 14px Roboto;
+    color: #333333;  
+    text-align: center;
+    border: #333333 1px solid;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-top:25px;
+    
+}
+.condicao-pagamento1 {
+    font: normal normal normal 14px Roboto;
+    color: #666666;
+    position: absolute;
+    margin: 55px 18px;
+
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+    width: 418px;
+}
+
+.segunda-condicao {
+    display:flex;
+    margin: 40px 18px;
+    gap: 10px;
+
+}
+
+.antigo-preco {
+    font: normal normal normal 26px Roboto;
+    color: #999999;
+    
+}
+
+.preco-atual {
+    font: normal normal bold 26px Roboto;
+    color: #333333; 
+    
+}
+
+.condicao-pagamento2 {
+    font: normal normal normal 14px Roboto;
+    color: #666666;
+    position: absolute;
+    margin: 40px 0;
+}
+
+.botao {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn-quantidade-produto {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 177px;
+    height: 50px;
+    border-radius: 50px;
+    display:flex;
+    justify-content:space-around;
+}
+
+#mais {
+    border:none;
+    background-color: #FFFFFF;
+    width:37px; 
+    border-radius: 50px; 
+    font: normal normal normal 30px Roboto;
+}
+
+#mais:active {
+    font-size: 32px;
+}
+
+#menos {
+    border:none;
+    background-color: #FFFFFF;
+    width: 37px;
+    border-radius: 50px;
+    font: normal normal normal 30px Roboto;
+}
+
+#menos:active {
+    font-size: 34px;
+}
+
+.text {
+    border:none;
+    background-color: #FFFFFF;
+    width:37px;
+    margin-left: 10px; 
+    font: normal normal normal 30px Roboto;
+}
+
+#comprar {
+    background: transparent linear-gradient(270deg, #80D6B5 0%, #89C993 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    border:none;
+    width: 271px;
+    height: 50px;
+
+    font: normal normal bold 28px Roboto;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#comprar:active {
+    width: 270px;
+    height: 49px;
+}
+
+.link-atacado {
+    position: relative;
+    text-decoration: underline;
+    font: normal normal normal 14px Roboto;
+    color: #4CA871;
+}
+
+.box-frete {
+    width:474px;
+    height:153px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.titulo-frete {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    justify-content:space-between;
+}
+
+.titulo-frete h2 {
+    font: normal normal bold 16px Roboto;
+    color: #333333;
+    text-transform: uppercase;  
+}
+
+.titulo-frete p {
+    text-decoration: underline;
+    font: normal normal normal 16px Roboto;
+    color: #999999;
+    
+}
+
+#cpf {
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    width: 357px;
+    height: 50px;
+    margin-left: 20px;
+    padding-left: 23px;
+    position: absolute;
+}
+
+.btn-calcular {
+    background: #333333;
+    border-radius: 50px;
+    width: 157px;
+    height: 50px;
+    position: relative;
+    margin-left: 300px;
+    border:none;
+    
+    
+    font: normal normal bold 16px Roboto;
+    color: #FFFFFF;
+    text-transform: uppercase;  
+}
+
+.btn-calcular:active {
+    width: 156px;
+    height: 49px;
+}
+
+.info-produto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 157px;
+    background: transparent linear-gradient(270deg, #80D6B5 0%, #89C993 100%);
+    margin-top: 38px;
+    padding-left: 98px;
+}
+
+.logo-info-produto {
+    width: 55px;
+    height: 55px;
+    color: #FFFFFF;
+}
+
+.info-produto-item {
+    display: flex;
+    gap: 14px;
+    font: normal normal bold 20px Raleway;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    align-items: center;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 130px;
+    
+    
+}
+
+.info-produto-item:nth-child(4n) {
+    border: none;
+}
+
+.img-diversos {
+    width: 100%;
+    height: 421px;
+}
+
+.detalhe-produto, .opiniao-comentario {
+    width: 78%;
+    margin-left:200px;
+
+}
+
+.detalhe-produto h1 {
+    font: normal normal bold 35px Raleway;
+    color: #333333;
+    margin: 80px 0 40px;  
+}
+
+.detalhe-produto p {
+    font: normal normal normal 18px Roboto;
+    color: #333333;
+    text-align: left;
+    line-height: 1.5;
+    text-transform: capitalize; 
+}
+
+.lista-itens {
+    font: normal normal normal 18px Roboto;
+    color: #333333;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.7;
+}
+
+.opiniao-comentario {
+    margin: 0 auto;
+    margin-left:200px;
+
+}
+
+.opiniao {
+    display: flex;
+    align-items: center;
+    margin-top:100px;
+    gap:15px;
+}
+
+.opiniao h2 {
+    font: normal normal bold 35px Raleway;
+    color: #333333;
+    
+}
+
+hr {
+    color: #DDDDDD;
+    width: 700px;
+    margin-top: 8px;
+}
+
+.opiniao h5 {
+    font: normal normal normal 16px Roboto;
+    color: #333333;
+    
+}
+
+.material-icons {
+    color: #F4C960;
+    font-size: 12px;
+}
+
+.comentarios, .carrossel{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin: 41px 0 auto; 
+}
+
+.anterior {
+    margin: auto 0;
+    transform: scaleX(-1);
+}
+
+.comentario-individual {
+    width: 470px;
+    height: 260px;
+    background: #FFFFFF;
+    padding: 30px 50px;
+}
+
+.comentario-individual h3 {
+    font: normal normal bold 30px Roboto;
+    color: #333333;
+    
+}
+
+.comentario-individual p {
+    font: normal normal normal 18px Roboto;
+    color: #333333; 
+    margin: 20px 0 10px;
+}
+
+.comentario-individual h5 {
+    font: normal normal 300 16px Roboto;
+    color: #333333;
+}
+
+.proximo {
+    margin:auto 0;
+
+}
+
+.btn-voltar, .btn-proximo {
+    border: none;
+    background-color: #F5F5F5;
+}
+
+@media (max-width:765px) {
+    .conteudo-comprar {
+        margin: 0;
+    }
+
+    .img-produto-principal {
+        display:flex;
+        gap: 0px;
+        margin:0;
+    }
+
+    #img-destaque {
+        width:428px;
+        height:420px;
+        margin:0;
+        padding-right: 10px;
+    }
+
+    .img-galeria {
+        display: flex;
+        gap:10px;
+        margin:0;
+    }
+
+    .img-pequena-galeria {
+        width:428px;
+        height:420px;
+    }
+
+    .conteudo-comprar-info {
+        width: 100%;
+        max-width:375px;
+        padding-left: 30px;
+    }
+
+    .conteudo-comprar-info h1 {
+        font: normal normal bold 26px Raleway;
+        width: 310px;
+           
+    }
+    .btn-tamanho {
+        display: flex;
+        gap:5px;
+    }
+
+    .btn-quantidade {
+        width: 75px;
+        height: 50px; 
+        display: flex;
+        align-items: center;
+        justify-content:center;
+
+    }
+
+    .condicao-pagamento1 {
+        width:290px;
+        
+    }
+
+    .valor-produto {
+        width: 310px;
+    }
+
+    .btn-quantidade-produto {
+        width:30%
+    }
+
+    #comprar {
+        width:200px
+    }
+        
+    .link-atacado {
+        font-size: 10px;
+    }
+
+    .box-frete {
+      width: 310px; 
+    }
+
+    #cpf {
+        width:280px;
+    }
+
+    .btn-calcular {
+        margin-left:190px;
+        width:110px;
+    }
+
+    .info-produto {
+        display:grid;
+        grid-template-columns: 1fr 1fr;        
+        grid-gap: 15px;
+        padding: 30px 80px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .info-produto-item {
+        border: none;
+        gap: 10px;
+        width: 100px;
+
+    }
+
+    .logo-info-produto {
+        width: 33px;
+        height: 33px;;
+    }
+
+    .info-produto-item h2 {
+        font-size: 1rem;
+    }
+
+    .img-diversos {
+        width: 100%;
+        height: auto;
+    }
+
+    .detalhe-produto, .opiniao-comentario {
+        width: auto;
+        height: auto;
+        margin:30px;
+    }
+
+    .detalhe h1 {
+        font-size: 25px;
+    }
+
+    .detalhe p {
+        font-size: 16px;
+    }
+
+    .lista-itens {
+        font-size: 16px;
+    }
+
+    .opiniao{
+        flex-wrap: wrap;
+    
+    }
+
+    .opiniao h2 {
+        font-size:25px;
+    }
+
+    .opiniao h5 {
+        font-size: 15px;
+        padding-right: 20px;
+    }
+
+    hr {
+        border: none;
+    }
+
+    .material-icons {
+        width: 16px;   
+    }
+
+    .comentarios {
+        display:flex;
+        gap:20px;
+        
+         
+    }
+
+    .comentario-individual {
+        width: 300px;
+        height: 260px;
+        background: #FFFFFF;
+        padding:30px;
+        
+    }
+
+    .comentario-individual h3 {
+        font-size:26px;
+        padding-bottom: 5px;
+    }
+    
+    .comentario-individual p {
+        width: 280px;
+    }
+
+    .comentario-individual h5 {
+        font-size: 14px;
+    }
+
+    
+}
+
+
+
+   
+
+     
+    
+
+
+
+
+

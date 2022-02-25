@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Teste Estagio da pandanjo - Michel Garbelotti</title>
+</head>
+<body>
+    <section class="conteudo-comprar">
+        
+        <article class="img-produto-principal">
+            <!-- referente a imagem em destaque -->
+            <img src="img/Grupo 258.png" alt="imagem do produto - Óleo de coco" id="img-destaque">
+            
+            <div class="img-galeria"> 
+                
+                <div>
+                <img src="/img/Grupo 258.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria img-pequena-galeria-ativa" onclick="mudarFoto(this)" onclick="mudarBorda()"> 
+                </div>
+
+                <div>
+                <img src="/img/Grupo 258-pb.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria" onclick="mudarFoto(this)" onclick="mudarBorda()">
+                </div>
+                
+            </div>
+        </article>   
+
+        <section class="conteudo-comprar-info"><!-- referente a toda informação da compra  -->
+            <h1> óleo de coco extra virgem extraído da película do coco santo oleo </h1>
+            
+            <h3>selecione uma das opções abaixo</h3><!-- Inicio das opções do tanhanho do produto -->
+            <div class="btn-tamanho">
+                <button class="btn-quantidade btn-quantidade-selecionado" aria-label="tamanho de 200 ml" onclick="itemSelecionado">200 ml</button>
+                <button class="btn-quantidade" aria-label="tamanho de 400 ml" onclick="itemSelecionado">400 ml</button>
+                <button class="btn-quantidade" aria-label="tamanho de 1 litro" onclick="itemSelecionado">1 L</button>
+                <button class="btn-quantidade" aria-label="tamanho 2 litros" onclick="itemSelecionado">2 L</button>
+            </div><!-- fim das opções do tamanho do produto -->
+            
+            <div class="valor-produto"><!-- referente aos valores pode produto -->
+                <div class="primeira-condicao">
+                    <h2 class="preco-descontado">R$ 17,88</h2>
+                    <p class="desconto">-5%</p>
+                    <p class="condicao-pagamento1">Via Boleto,PIX e Transfenrêcia</p>
+                    
+                </div>
+                
+                <div class="segunda-condicao">
+                    <h2 class="antigo-preco">R$ 30,00</h2>
+                    <h2 class="preco-atual">R$ 18,00</h2>
+                    <p class="condicao-pagamento2">ou em <strong>3x R$ 3,27</strong> s/ juros</p>
+                </div>
+            </div><!-- fim dos valores do produto -->
+
+            <div class="botao"> <!--referente aos botões de adicionar quantidade e de comprar-->
+                <div class="btn-quantidade-produto">      
+                    <input type="button" id="menos" value='-' onclick="process(-1)" aria-label="menos 1">
+                    <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5">
+                    <input type="button" id="mais" value='+' onclick="process(1)" aria-label="mais 1">
+                </div>
+
+                <div class="btn-principal"> <!--botão de comprar-->
+                <button id="comprar" type="submit" aria-label="Comprar">Comprar</button>
+                </div>
+
+            </div> <!--fim dos botões-->
+
+            <!-- referente para comprar em atacado -->
+            <a href="#" class="link-atacado">Quer comprar em grandes quantidades? Temos um desconto especial! </a>
+            
+            <div class="box-frete"> <!--referente a caixa do calcular frete-->
+                <div class="titulo-frete">
+                    <h2>calcule o frete</h2>
+                    <p>Não sei meu CEP</p>
+                </div>
+
+                <div class="btn-frete">
+                    <input type="number" nome="cpf" id="cpf" placeholder=" Insira o frete aqui">
+                    <button class="btn-calcular">calcular</button>
+                </div>
+            </div><!-- fim da caixa do calcular frete -->
+
+        </section>     
+
+    </section>
+
+    <section class="info-produto"> <!--referente as informações do produto-->
+        <div class="info-produto-item">
+            <img src="/img/gluten-free.png" alt="ícone- Produto sem glúten" class="logo-info-produto">
+            <h2>sem glúten</h2>
+        </div>
+
+        <div class="info-produto-item">
+            <img src="/img/002-plant-based.png" alt="ícone-Produto Orgânico" class="logo-info-produto">
+            <h2>orgânico</h2>
+        </div>
+
+        <div class="info-produto-item">
+            <img src="/img/Grupo 21.png" alt="ícone-Produto LowCarb" class="logo-info-produto">
+            <h2>lowcarb</h2>
+        </div>
+
+        <div class="info-produto-item">
+            <img src="/img/Grupo 22.png" alt="ícone-Produto sem lactose" class="logo-info-produto">
+            <h2>sem lácteos</h2>
+        </div>
+
+    </section> <!--Fim da seção das informações-->
+
+    <div> <!--imagem com diversos produtos para separar as seção-->
+        <img src="/img/Nopath.png"  alt="imagem com diversos alimentos da loja" class="img-diversos">
+    </div>
+
+    <section class="detalhe-produto"><!-- referente aos detalhes do produto -->
+        <div class="detalhe">
+            <h1>Detalhes do produto</h1>
+            <p>O Santo Óleo de Coco Virgem é um produto 100% natural e obtido através da parte branca carnosa e da película marrom. Sua coloração é um pouco amarelada e sua acidez máxima é de 0,5%. Indicação de uso: Preparação de alimentos quentes como bolos tortas arroz frituras etc.</p><br><br>
+            <ul class="lista-itens">
+                <li>Sem conservante e/ou produtos químicos</li>
+                <li>Não contém glútem</li>
+                <li>Acidez abaixo de 0,5%</li>
+                <li>Extraído da polpa da fruta</li>
+                <li>Não refinado e não hidrogenado</li>
+            </ul>    
+        </div> <!--fim dos detalhes do produto-->
+    </section>
+    
+    <section class="opiniao-comentario"><!--referente a seção de opiniao e comentários-->
+        <div class="opiniao"> 
+            <h2>Opinião de quem comprou</h2>
+            <hr>
+            <h5>(28 avaliações)</h5>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>          
+        </div>
+        
+        <div class="comentarios"><!--referente aos comentários-->
+            <div class="carrossel">
+                <div class="anterior">
+                    <button class="btn-voltar" aria-label="voltar"><img src="img/proximo.svg"></button>                    
+                </div>
+                <div class="comentario-individual">
+                    <h3>joelma companhol</h3>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <P>"acabei de comprar ansiosa que chegue logo aliás estou viciada na Ingredientes Online tudo maravilhoso "</P>
+                    <h5>24/12/20</h5>   
+                </div>
+
+                <div class="comentario-individual">
+                    <h3>kelly</h3>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star_border</span>
+                    <P>"maravilhoso! sem dúvidas, o melhor do mercado. sem retrogosto e dissolve facilmente."</P>
+                    <h5>20/01/2021</h5>  
+                </div>
+
+                <div class="comentario-individual">
+                    <h3>luca chaves</h3>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <P>"Maravilhoso! sem dúvidas, o melhor do mercado. sem retrogosto e dissolve facilmente."</P>
+                    <h5>24/12/20</h5>  
+                </div>
+
+                <div class="proximo">
+                <button class="btn-proximo" aria-label="proximo"><img src="img/proximo.svg"> </button>
+                </div>
+
+            </div>
+                      
+        </div> <!--fim dos comentários -->  
+
+            
+            
+        
+         
+    </section>
+
+
+
+
+    
+</body>
+</html>
