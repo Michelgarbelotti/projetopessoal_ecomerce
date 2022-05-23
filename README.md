@@ -1,4 +1,4 @@
-# projeto-estagio
-### projeto para estagio pandanjo
+# projeto Projeto
+### Este projeto tem com intuito colocar em prática todo conhecimento que venho adquirindo em HTML | CSS | JAVASCRIPT
 
 visualização https://projetoestagio.netlify.app/
