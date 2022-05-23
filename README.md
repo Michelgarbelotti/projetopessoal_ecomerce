@@ -1,4 +1,4 @@
 # projeto Projeto
-### Este projeto tem com intuito colocar em prática todo conhecimento que venho adquirindo em HTML | CSS | JAVASCRIPT
+###(EM DESENVOLVIMENTO)  Este projeto tem com intuito colocar em prática todo conhecimento que venho adquirindo em HTML | CSS | JAVASCRIPT
 
 visualização https://projetoestagio.netlify.app/
