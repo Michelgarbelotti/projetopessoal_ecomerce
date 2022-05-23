@@ -36,9 +36,9 @@ body {
     
 }
 
-.img-pequena-galeria:hover, .img-pequena-galeria:focus, .img-pequena-galeria:active  { 
+/* .img-pequena-galeria:hover, .img-pequena-galeria:focus, .img-pequena-galeria:active  { 
     border: 2px solid #4CA871;
-}
+} */
     
 
 .conteudo-comprar-info {
@@ -63,7 +63,7 @@ body {
     
 }
 
-.btn-quantidade {
+.btn-quantidade1, .btn-quantidade2, .btn-quantidade3, .btn-quantidade4{
   width: 100px;
   height: 50px;
   
@@ -76,10 +76,10 @@ body {
   cursor: pointer;
 }
 
-.btn-quantidade-selecionado {
+/* .btn-quantidade1 {
     background: transparent linear-gradient(90deg, #89C993 0%, #80D6B5 100%) 0% 0% no-repeat padding-box;
     color: #FFFFFF;
-}
+} */
 
 .valor-produto {
     width: 462px;
@@ -93,7 +93,7 @@ body {
     display: flex; 
 }
 
-.preco-descontado {
+#preco-descontado {
     font: normal normal bold 28px Roboto;
     color: #333333;
     margin: 18px 18px;    
@@ -128,19 +128,19 @@ body {
 
 }
 
-.antigo-preco {
+#antigo-preco {
     font: normal normal normal 26px Roboto;
     color: #999999;
     
 }
 
-.preco-atual {
+#preco-atual {
     font: normal normal bold 26px Roboto;
     color: #333333; 
     
 }
 
-.condicao-pagamento2 {
+#condicao-pagamento2 {
     font: normal normal normal 14px Roboto;
     color: #666666;
     position: absolute;
@@ -355,7 +355,7 @@ body {
     display: flex;
     align-items: center;
     margin-top:100px;
-    gap:15px;
+    gap:10px;
 }
 
 .opiniao h2 {
@@ -378,7 +378,7 @@ hr {
 
 .material-icons {
     color: #F4C960;
-    font-size: 12px;
+    width: 30px;
 }
 
 .comentarios, .carrossel{
@@ -427,194 +427,6 @@ hr {
     background-color: #F5F5F5;
 }
 
-@media (max-width:765px) {
-    .conteudo-comprar {
-        margin: 0;
-    }
-
-    .img-produto-principal {
-        display:flex;
-        gap: 0px;
-        margin:0;
-    }
-
-    #img-destaque {
-        width:428px;
-        height:420px;
-        margin:0;
-        padding-right: 10px;
-    }
-
-    .img-galeria {
-        display: flex;
-        gap:10px;
-        margin:0;
-    }
-
-    .img-pequena-galeria {
-        width:428px;
-        height:420px;
-    }
-
-    .conteudo-comprar-info {
-        width: 100%;
-        max-width:375px;
-        padding-left: 30px;
-    }
-
-    .conteudo-comprar-info h1 {
-        font: normal normal bold 26px Raleway;
-        width: 310px;
-           
-    }
-    .btn-tamanho {
-        display: flex;
-        gap:5px;
-    }
-
-    .btn-quantidade {
-        width: 75px;
-        height: 50px; 
-        display: flex;
-        align-items: center;
-        justify-content:center;
-
-    }
-
-    .condicao-pagamento1 {
-        width:290px;
-        
-    }
-
-    .valor-produto {
-        width: 310px;
-    }
-
-    .btn-quantidade-produto {
-        width:30%
-    }
-
-    #comprar {
-        width:200px
-    }
-        
-    .link-atacado {
-        font-size: 10px;
-    }
-
-    .box-frete {
-      width: 310px; 
-    }
-
-    #cpf {
-        width:280px;
-    }
-
-    .btn-calcular {
-        margin-left:190px;
-        width:110px;
-    }
-
-    .info-produto {
-        display:grid;
-        grid-template-columns: 1fr 1fr;        
-        grid-gap: 15px;
-        padding: 30px 80px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .info-produto-item {
-        border: none;
-        gap: 10px;
-        width: 100px;
-
-    }
-
-    .logo-info-produto {
-        width: 33px;
-        height: 33px;;
-    }
-
-    .info-produto-item h2 {
-        font-size: 1rem;
-    }
-
-    .img-diversos {
-        width: 100%;
-        height: auto;
-    }
-
-    .detalhe-produto, .opiniao-comentario {
-        width: auto;
-        height: auto;
-        margin:30px;
-    }
-
-    .detalhe h1 {
-        font-size: 25px;
-    }
-
-    .detalhe p {
-        font-size: 16px;
-    }
-
-    .lista-itens {
-        font-size: 16px;
-    }
-
-    .opiniao{
-        flex-wrap: wrap;
-    
-    }
-
-    .opiniao h2 {
-        font-size:25px;
-    }
-
-    .opiniao h5 {
-        font-size: 15px;
-        padding-right: 20px;
-    }
-
-    hr {
-        border: none;
-    }
-
-    .material-icons {
-        width: 16px;   
-    }
-
-    .comentarios {
-        display:flex;
-        gap:20px;
-        
-         
-    }
-
-    .comentario-individual {
-        width: 300px;
-        height: 260px;
-        background: #FFFFFF;
-        padding:30px;
-        
-    }
-
-    .comentario-individual h3 {
-        font-size:26px;
-        padding-bottom: 5px;
-    }
-    
-    .comentario-individual p {
-        width: 280px;
-    }
-
-    .comentario-individual h5 {
-        font-size: 14px;
-    }
-
-    
-}
 
 
 

@@ -5,54 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Teste Estagio da pandanjo - Michel Garbelotti</title>
+    <title>Teste Estagio da Pandanjo - Michel Garbelotti</title>
 </head>
 <body>
     <section class="conteudo-comprar">
         
-        <article class="img-produto-principal">
+        <div class="img-produto-principal">
             <!-- referente a imagem em destaque -->
             <img src="img/Grupo 258.png" alt="imagem do produto - Óleo de coco" id="img-destaque">
             
             <div class="img-galeria"> 
                 
                 <div>
-                <img src="/img/Grupo 258.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria img-pequena-galeria-ativa" onclick="mudarFoto(this)" onclick="mudarBorda()"> 
+                <img src="/img/Grupo 258.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria img-pequena-galeria-ativa" onclick="mudarFoto(this)" onclick = 'mudarBorda(this)' > 
                 </div>
 
                 <div>
-                <img src="/img/Grupo 258-pb.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria" onclick="mudarFoto(this)" onclick="mudarBorda()">
+                <img src="/img/Grupo 258-pb.png" alt="imagem do produto - Óleo de coco" class="img-pequena-galeria" onclick="mudarFoto(this)" onclick = 'mudarBorda()'>
                 </div>
                 
             </div>
-        </article>   
+        </div>   
 
         <section class="conteudo-comprar-info"><!-- referente a toda informação da compra  -->
             <h1> óleo de coco extra virgem extraído da película do coco santo oleo </h1>
             
-            <h3>selecione uma das opções abaixo</h3><!-- Inicio das opções do tanhanho do produto -->
+            <h3>selecione uma das opções abaixo</h3><!-- Inicio das opções do tamanho do produto -->
             <div class="btn-tamanho">
-                <button class="btn-quantidade btn-quantidade-selecionado" aria-label="tamanho de 200 ml" onclick="itemSelecionado">200 ml</button>
-                <button class="btn-quantidade" aria-label="tamanho de 400 ml" onclick="itemSelecionado">400 ml</button>
-                <button class="btn-quantidade" aria-label="tamanho de 1 litro" onclick="itemSelecionado">1 L</button>
-                <button class="btn-quantidade" aria-label="tamanho 2 litros" onclick="itemSelecionado">2 L</button>
+                <button class="btn-quantidade1" aria-label="tamanho de 200 ml" onclick = "itemSelecionado1()">200 ml</button>
+                <button class="btn-quantidade2" aria-label="tamanho de 400 ml" onclick="itemSelecionado2()">400 ml</button>
+                <button class="btn-quantidade3" aria-label="tamanho de 1 litro" onclick="itemSelecionado3()">1 L</button>
+                <button class="btn-quantidade4" aria-label="tamanho 2 litros" onclick="itemSelecionado4()">2 L</button>
             </div><!-- fim das opções do tamanho do produto -->
             
             <div class="valor-produto"><!-- referente aos valores pode produto -->
                 <div class="primeira-condicao">
-                    <h2 class="preco-descontado">R$ 17,88</h2>
+                    <h2 id="preco-descontado">R$ 15,20</h2>
                     <p class="desconto">-5%</p>
-                    <p class="condicao-pagamento1">Via Boleto,PIX e Transfenrêcia</p>
+                    <p class="condicao-pagamento1">Via Boleto,PIX e Transferência</p>
                     
                 </div>
                 
                 <div class="segunda-condicao">
-                    <h2 class="antigo-preco">R$ 30,00</h2>
-                    <h2 class="preco-atual">R$ 18,00</h2>
-                    <p class="condicao-pagamento2">ou em <strong>3x R$ 3,27</strong> s/ juros</p>
+                    <h2 id="antigo-preco">R$ 18,00</h2>
+                    <h2 id="preco-atual">R$ 16,00</h2>
+                    <p id="condicao-pagamento2">ou em <strong>3x <span id="parcelado">R$ 5,33</span></strong>s/ juros</p>
                 </div>
             </div><!-- fim dos valores do produto -->
 
@@ -79,7 +78,7 @@
                 </div>
 
                 <div class="btn-frete">
-                    <input type="number" nome="cpf" id="cpf" placeholder=" Insira o frete aqui">
+                    <input type="number" nome="cpf" id="cpf" placeholder=" Insira o frete aqui, apenas números" maxlength="8">
                     <button class="btn-calcular">calcular</button>
                 </div>
             </div><!-- fim da caixa do calcular frete -->
@@ -196,6 +195,6 @@
 
 
 
-    
+    <script src="index.js"></script>    
 </body>
 </html>
