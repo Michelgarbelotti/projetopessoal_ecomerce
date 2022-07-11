@@ -63,7 +63,7 @@ body {
     
 }
 
-.btn-quantidade1, .btn-quantidade2, .btn-quantidade3, .btn-quantidade4{
+#btn-quantidade1, #btn-quantidade2, #btn-quantidade3, #btn-quantidade4{
   width: 100px;
   height: 50px;
   
@@ -76,10 +76,10 @@ body {
   cursor: pointer;
 }
 
-/* .btn-quantidade1 {
+.btn-selecionado {
     background: transparent linear-gradient(90deg, #89C993 0%, #80D6B5 100%) 0% 0% no-repeat padding-box;
     color: #FFFFFF;
-} */
+}
 
 .valor-produto {
     width: 462px;
